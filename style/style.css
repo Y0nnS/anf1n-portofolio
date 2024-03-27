@@ -1,0 +1,694 @@
+:root {
+  --white: #eaeaea;
+  --primary: #009dff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 2px solid red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+header {
+  background-color: #0c0c0c;
+  position: fixed;
+  width: 100%;
+  padding: 30px;
+}
+
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+}
+
+.headerTitle h1 {
+  color: var(--white);
+  font-size: 26px;
+}
+
+.headerTitle h1 span {
+  font-weight: bold;
+  color: var(--primary);
+  /* -webkit-text-stroke: 1px var(--primary); */
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Section Home */
+
+.homeSection {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9) url(bg.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeSectionItem h1,
+.homeSectionItem p {
+  color: var(--white);
+}
+
+.homeSectionItem h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.homeSectionItem h1 span {
+  font-weight: bold;
+  color: var(--primary);
+  /* -webkit-text-stroke: 1px var(--primary); */
+}
+
+.homeSectionItem p {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.homeSectionItem p span {
+  color: rgb(255, 106, 0);
+  font-weight: bold;
+}
+
+.homeSectionItem img {
+  width: 300px;
+  padding: 20px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+/* SECTION ABOUT */
+
+.aboutSection {
+  height: 70vh;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSectionTitle {
+  color: var(--white);
+}
+
+.aboutSectionTitle h1 {
+  font-size: 30px;
+  color: var(--primary);
+  /* -webkit-text-stroke: 1px var(--primary); */
+}
+
+.aboutSectionTitle p {
+  font-size: 22px;
+}
+
+.aboutSectionTitle p span {
+  color: rgb(255, 106, 0);
+  font-weight: bold;
+}
+
+.aboutSectionItem .aboutImage img {
+  width: 300px;
+  padding-top: 30px;
+  padding-right: 30px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.aboutSectionItem {
+  display: flex;
+  color: var(--white);
+  align-items: center;
+}
+
+.aboutTeks {
+  max-width: 55%;
+}
+
+.aboutTeksItem p {
+  max-width: 700px;
+  padding: 10px 0px;
+  letter-spacing: 1px;
+}
+
+.aboutTeksItem h1 {
+  font-size: 30px;
+  color: var(--primary);
+  /* -webkit-text-stroke: 1px var(--primary); */
+}
+
+.aboutTeksItem .aboutTeksButton a button {
+  padding: 10px 20px;
+  font-size: 19px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.aboutTeksItem .aboutTeksButton a button:hover {
+  background-color: var(--primary);
+  color: #333;
+}
+
+.aboutTeksItemButton {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.aboutTeksButton i:hover {
+  color: #c9c9c9;
+}
+
+.aboutIdentitySkill {
+  display: flex;
+  padding: 10px;
+}
+
+.aboutTeksSkill ul li {
+  list-style: none;
+  padding: 5px;
+}
+
+.aboutTeksSkill ul li span {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.aboutSkill ul {
+  display: flex;
+}
+
+.aboutSkill ul li img {
+  width: 30px;
+}
+
+.aboutSkill p,
+.aboutIdentity p {
+  color: var(--primary);
+  font-weight: bold;
+  font-style: oblique;
+}
+
+/* SECTION PROJECT */
+
+.projectSection {
+  height: 100vh;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectTitle {
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+}
+
+.projectTitle h1 {
+  color: var(--primary);
+  /* -webkit-text-stroke: 1px var(--primary); */
+}
+
+.projectTitle p {
+  padding: 10px;
+  width: 100%;
+}
+
+.projectBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.projectItem {
+  /* border: 2px solid #fff; */
+  max-width: 400px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.projectItem img {
+  width: 100%;
+}
+
+.projectImage {
+  /* border: 2px solid var(--white); */
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.projectImage img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.projectItem p {
+  color: var(--white);
+  padding: 20px 0px;
+}
+
+.projectTools ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: var(--white);
+}
+
+.projectTools ul li {
+  list-style: none;
+}
+
+.projectTools ul li i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.projectTools img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.projectButton a button {
+  padding: 10px 20px;
+  border: none;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--white);
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.projectButton a button:hover {
+  background-color: var(--primary);
+  color: #333;
+}
+
+/* SECTION CONTATC */
+
+.contactSection {
+  height: 27vh;
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactBox {
+  text-align: center;
+  color: var(--white);
+  padding: 20px;
+}
+
+.contactTitle {
+  padding: 10px;
+}
+
+.contactTitle h1 {
+  font-size: 23px;
+}
+
+.contactTitle p {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.contactTitle span {
+  color: var(--primary);
+  /* -webkit-text-stroke: 0.8px var(--primary); */
+}
+
+.contactList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contactButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contactButton i {
+  font-size: 30px;
+  color: var(--white);
+}
+
+.contactBox-item {
+  padding: 10px;
+}
+/* FOOTER */
+
+footer {
+  height: 6vh;
+  background-color: #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+footer h1 {
+  font-size: 17px;
+}
+
+footer h1 span {
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 1371px) {
+  .projectSection {
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .headerTitle h1 {
+    font-size: 20px;
+  }
+
+  .homeSectionItem img {
+    width: 200px;
+  }
+
+  .homeSectionItem h1 {
+    font-size: 25px;
+  }
+
+  .homeSectionItem p {
+    font-size: 20px;
+  }
+
+  /* ABOUTME */
+  .aboutSection {
+    height: 80vh;
+  }
+
+  .aboutSectionItem {
+    display: block;
+  }
+
+  .aboutTeks {
+    max-width: 100%;
+  }
+
+  .aboutSectionTitle {
+    text-align: center;
+  }
+
+  .aboutSectionTitle h1 {
+    font-size: 25px;
+  }
+
+  .aboutSectionTitle p {
+    font-size: 20px;
+  }
+
+  .aboutSectionItem .aboutImage img {
+    width: 200px;
+    padding: 30px;
+    border-radius: 100%;
+  }
+
+  .aboutImage {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutTeksItem {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutTeksItem h1 {
+    font-size: 23px;
+  }
+
+  .aboutTeksItem p {
+    font-size: 15px;
+  }
+
+  .aboutTeksButton {
+    font-size: 5px;
+    padding: 0;
+  }
+
+  .aboutTeksItem .aboutTeksButton a button {
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 5px;
+    transition: 0.4s;
+  }
+
+  .aboutTeksButton a {
+    padding: 0px 10px 0px 0px;
+  }
+
+  .aboutTeksButton img {
+    width: 30px;
+  }
+
+  .aboutTeksSkill {
+    display: flex;
+    justify-content: left;
+  }
+
+  .aboutIdentitySkill {
+    display: block;
+    text-align: left;
+  }
+
+  .aboutSkill p {
+    padding: 10px 0px;
+  }
+
+  /* .aboutIdentitySkill ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+  } */
+
+  /* MY PROJECT */
+
+  .projectSection {
+    height: 90vh;
+  }
+
+  .projectItem {
+    max-width: 300px;
+    height: 380px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .projectButton a button {
+    padding: 5px 10px;
+  }
+
+  /* CONTACT*/
+
+  .contactSection {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactBox {
+    max-width: 80%;
+  }
+
+  .contactTitle h1 {
+    font-size: 20px;
+  }
+
+  .contactTitle p {
+    font-size: 19px;
+  }
+
+  .contactList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  /* FOOTER */
+  footer {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+  }
+
+  footer h1 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1059px) {
+  .projectSection {
+    height: 129vh;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /* HEADER */
+  .homeSection {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7) url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  /* NAVBAR */
+
+  header {
+    display: flex;
+    justify-content: left;
+    padding: 0;
+  }
+
+  .headerBox {
+    padding: 20px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* ABOUT */
+  .aboutSection {
+    padding: 20px;
+  }
+
+  .aboutTeksItem p {
+    font-size: 13px;
+  }
+
+  .aboutSkill ul li,
+  .aboutIdentity ul li {
+    font-size: 13px;
+  }
+
+  .aboutSkill ul li img {
+    width: 20px;
+  }
+  /* PROJECT */
+
+  .projectSection {
+    height: 180vh;
+    padding: 10px;
+  }
+
+  .projectBox {
+    padding: 10px;
+  }
+
+  .projectTitle p {
+    font-size: 14px;
+  }
+
+  .projectItem {
+    max-width: 300px;
+    height: 330px;
+  }
+
+  .projectItem p {
+    font-size: 13px;
+  }
+
+  .projectTools ul li img {
+    width: 26px;
+  }
+  /* CONTACT */
+
+  .contactSection {
+    height: 40vh;
+    padding: 10px;
+  }
+
+  .contactTitle {
+    padding: 10px;
+  }
+
+  .contactTitle h1 {
+    font-size: 18px;
+  }
+
+  .contactTitle p {
+    font-size: 15px;
+  }
+
+  .contactList p {
+    font-size: 13px;
+  }
+
+  .contactButton i {
+    font-size: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+  }
+
+  footer h1 {
+    font-size: 12px;
+  }
+}
