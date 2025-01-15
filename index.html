@@ -15,52 +15,80 @@
   }
 </style>
 
-<body>
-  <header class="bg-black fixed w-full py-6 z-50">
-    <div class="flex justify-between items-center px-24">
+<body class="scroll-smooth">
+  <header class="bg-black fixed w-full flex justify-center items-center py-6 z-50 shadow-lg">
+    <div class="flex justify-center gap-32 items-center px-24">
       <div class="text-white text-2xl">
         <h1>
-          Portofolio <span class="font-bold text-primary">ANF1N</span>
+          Portofolio <span class="font-bold text-primary text-blue-400">ANF1N</span>
         </h1>
       </div>
       <nav class="flex gap-8">
-        <a href="#home" class="text-white no-underline">Home</a>
-        <a href="#about" class="text-white no-underline">About</a>
-        <a href="#project" class="text-white no-underline">Project</a>
-        <a href="#certificate" class="text-white no-underline">Certificate</a>
+        <a href="#home" class="text-white no-underline hover:text-primary transition-all hover:text-blue-400">Home</a>
+        <a href="#about" class="text-white no-underline hover:text-primary transition-all hover:text-blue-400">About</a>
+        <a href="#project"
+          class="text-white no-underline hover:text-primary transition-all hover:text-blue-400">Project</a>
+        <a href="#certificate"
+          class="text-white no-underline hover:text-primary transition-all hover:text-blue-400">Certificate</a>
       </nav>
     </div>
   </header>
+
   <!-- Section Home -->
   <section id="home" class="relative h-screen bg-cover bg-fixed flex items-center justify-center text-center"
     style="background-image: url('assets/bg.jpg');">
     <!-- Overlay Gelap -->
-    <div class="absolute inset-0 bg-black opacity-70"></div>
+    <div class="absolute inset-0 bg-black opacity-80"></div>
 
     <!-- Konten Utama -->
     <div class="relative z-10 flex flex-col items-center">
-      <img src="assets/user1.jpg" alt="User Image" class="w-72 p-5 rounded-full">
-      <h1 class="text-white text-5xl font-normal mt-4">
-        Hi! My name <span class="font-bold text-primary">Andika Arifin</span>
+      <img src="assets/imageMe.jpeg" alt="User Image"
+        class="w-72 my-16 rounded-full transition-transform transform hover:scale-105 duration-300 cursor-pointer shadow-[0_0_15px_5px_#ffffff] hover:ring-0 hover:ring-primary hover:ring-opacity-50">
+      <h1
+        class="text-white text-5xl font-normal mt-4 transition-all ease-in-out duration-500 opacity-90 hover:opacity-100">
+        Hi! My name <span class="font-bold text-primary text-blue-400">Andika Arifin</span>
       </h1>
-      <p class="text-white text-3xl font-normal mt-4">
+      <p class="text-white text-3xl font-normal mt-4 opacity-80 hover:opacity-100 transition-opacity duration-300">
         I'm Junior <span class="font-bold text-orange-500">Website Developer</span>
       </p>
+
+      <!-- Ikon Sosial Media -->
+      <div class="flex gap-8 mt-6">
+        <a href="https://github.com/yourusername" target="_blank"
+          class="text-white text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+          <i class="fab fa-github hover:text-purple-400"></i>
+        </a>
+        <a href="https://www.instagram.com/yourusername" target="_blank"
+          class="text-white text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+          <i class="fab fa-instagram hover:text-pink-400"></i>
+        </a>
+        <a href="https://www.youtube.com/c/yourchannel" target="_blank"
+          class="text-white text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+          <i class="fab fa-youtube hover:text-red-400"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank"
+          class="text-white text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+          <i class="fab fa-linkedin hover:text-blue-400"></i>
+        </a>
+      </div>
     </div>
   </section>
+
+
+
   <!-- Section About -->
   <section id="about" class="h-[70vh] bg-[#141414] flex justify-center items-center">
     <div class="flex items-center text-white">
       <!-- Bagian Gambar -->
       <div class="pr-8">
-        <img src="assets/user1.jpg" alt="Profile Picture" class="w-72 pt-8 pr-8 rounded-full">
+        <img src="assets/imageMe.jpeg" alt="Profile Picture" class="w-72 pt-8 pr-8 rounded-full">
       </div>
 
       <!-- Bagian Teks -->
       <div class="max-w-[55%]">
         <!-- Judul -->
         <div class="mb-4">
-          <h1 class="text-4xl font-bold text-primary">About Me</h1>
+          <h1 class="text-4xl font-bold text-primary"><span class="text-blue-400">About</span> Me</h1>
         </div>
 
         <!-- Deskripsi -->
@@ -102,10 +130,14 @@
           <div>
             <p class="text-primary font-bold italic mb-2">My Skill</p>
             <ul class="flex gap-4">
-              <li><img src="assets/html.png" alt="HTML" class="w-8"></li>
-              <li><img src="assets/css.png" alt="CSS" class="w-8"></li>
-              <li><img src="assets/canva.png" alt="Canva" class="w-8"></li>
-              <li><img src="assets/figma.png" alt="Figma" class="w-8"></li>
+              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer"><img
+                  src="assets/html.png" alt="HTML" class="w-8"></li>
+              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer"><img
+                  src="assets/css.png" alt="CSS" class="w-8"></li>
+              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer"><img
+                  src="assets/canva.png" alt="Canva" class="w-8"></li>
+              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer"><img
+                  src="assets/figma.png" alt="Figma" class="w-8"></li>
             </ul>
           </div>
         </div>
@@ -114,7 +146,7 @@
         <div class="mt-6">
           <a href="https://anf1n-cv-2024.vercel.app/" target="_blank">
             <button
-              class="px-5 py-2 text-lg border-2 border-primary text-primary rounded hover:bg-primary hover:text-[#333] transition duration-300">
+              class="px-5 py-2 text-lg border-2 border-primary text-primary rounded hover:bg-primary transition-all duration-300 hover:scale-105 hover:bg-blue-400">
               Visit CV
             </button>
           </a>
@@ -123,11 +155,11 @@
     </div>
   </section>
   <!-- Section Projects -->
-  <section id="project" class="py-16 px-20 bg-neutral-800">
+  <section id="project" class="py-32 px-20 bg-neutral-800">
     <div class="container mx-auto">
       <!-- Judul Section -->
       <div class="text-center mb-12">
-        <h1 class="text-4xl font-bold text-primary mb-4 text-white">My Projects</h1>
+        <h1 class="text-4xl font-bold text-primary mb-4 text-white">My <span class="text-blue-400">Projects</span></h1>
         <p class="text-white text-lg max-w-2xl mx-auto">
           Here are some of the projects I have worked on. These reflect my passion and skills as a junior web developer.
         </p>
@@ -135,7 +167,8 @@
 
       <!-- Flex Projects -->
       <div class="flex flex-wrap justify-center gap-8">
-        <div class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project1.png" alt="Project 1" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Project 1</h3>
@@ -146,7 +179,8 @@
               class="text-white text-primary underline hover:text-orange-500">View Details</a>
           </div>
         </div>
-        <div class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project2.png" alt="Project 2" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Project 2</h3>
@@ -157,7 +191,8 @@
               class="text-white text-primary underline hover:text-orange-500">View Details</a>
           </div>
         </div>
-        <div class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project3.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Project 3</h3>
@@ -168,7 +203,8 @@
               class="text-white text-primary underline hover:text-orange-500">View Details</a>
           </div>
         </div>
-        <div class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project4.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Project 4</h3>
@@ -179,7 +215,8 @@
               class="text-white text-primary underline hover:text-orange-500">View Details</a>
           </div>
         </div>
-        <div class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project5.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Project 5</h3>
@@ -190,7 +227,8 @@
               class="text-white text-primary underline hover:text-orange-500">View Details</a>
           </div>
         </div>
-        <div class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project6.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Project 6</h3>
@@ -201,7 +239,8 @@
               class="text-white text-primary underline hover:text-orange-500">View Details</a>
           </div>
         </div>
-        <div class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project7.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Project 7</h3>
@@ -212,7 +251,8 @@
               class="text-white text-primary underline hover:text-orange-500">View Details</a>
           </div>
         </div>
-        <div class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project8.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Project 8</h3>
@@ -229,13 +269,15 @@
   <section id="certificate" class="py-16 px-20 bg-neutral-900">
     <div class="container mx-auto">
       <div class="text-center mb-12">
-        <h1 class="text-4xl font-bold text-primary mb-4 text-white">My Certificate</h1>
+        <h1 class="text-4xl font-bold text-primary mb-4 text-white">My <span class="text-blue-400">Certificate</span>
+        </h1>
         <p class="text-white text-lg max-w-2xl mx-auto">
           Here are some of the projects I have worked on. These reflect my passion and skills as a junior web developer.
         </p>
       </div>
       <div class="flex flex-wrap justify-center gap-8">
-        <div class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/certificate/certificate1.png" alt="Project 1" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Revou</h3>
@@ -244,7 +286,8 @@
             </p>
           </div>
         </div>
-        <div class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/certificate/certificate2.png" alt="Project 2" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Dibimbing.id</h3>
@@ -253,7 +296,8 @@
             </p>
           </div>
         </div>
-        <div class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/certificate/certificate3.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Dibimbing.id</h3>
@@ -262,7 +306,8 @@
             </p>
           </div>
         </div>
-        <div class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/certificate/certificate4.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Pijar </h3>
@@ -271,7 +316,8 @@
             </p>
           </div>
         </div>
-        <div class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/certificate/certificate5.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Telkom Indonesia</h3>
@@ -280,7 +326,8 @@
             </p>
           </div>
         </div>
-        <div class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72">
+        <div
+          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/certificate/certificate6.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from ID-Networkers</h3>
