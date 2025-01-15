@@ -16,22 +16,39 @@
 </style>
 
 <body class="scroll-smooth">
-  <header class="bg-black fixed w-full flex justify-center items-center py-6 z-50 shadow-lg">
-    <div class="flex justify-center gap-32 items-center px-24">
-      <div class="text-white text-2xl">
-        <h1>
-          Portofolio <span class="font-bold text-primary text-blue-400">ANF1N</span>
-        </h1>
-      </div>
-      <nav class="flex gap-8">
-        <a href="#home" class="text-white no-underline hover:text-primary transition-all hover:text-blue-400">Home</a>
-        <a href="#about" class="text-white no-underline hover:text-primary transition-all hover:text-blue-400">About</a>
-        <a href="#project"
-          class="text-white no-underline hover:text-primary transition-all hover:text-blue-400">Project</a>
-        <a href="#certificate"
-          class="text-white no-underline hover:text-primary transition-all hover:text-blue-400">Certificate</a>
-      </nav>
+  <header class="bg-black fixed w-full flex justify-between items-center py-4 px-6 z-50 shadow-lg">
+    <div class="text-white text-2xl">
+      <h1>
+        Portofolio <span class="font-bold text-blue-400">ANF1N</span>
+      </h1>
     </div>
+    <!-- Nav for larger screens -->
+    <nav class="hidden lg:flex gap-8">
+      <a href="#home" class="text-white no-underline hover:text-blue-400 transition-all">Home</a>
+      <a href="#about" class="text-white no-underline hover:text-blue-400 transition-all">About</a>
+      <a href="#project" class="text-white no-underline hover:text-blue-400 transition-all">Project</a>
+      <a href="#certificate" class="text-white no-underline hover:text-blue-400 transition-all">Certificate</a>
+    </nav>
+    <!-- Burger Menu -->
+    <div class="lg:hidden">
+      <button id="burger-menu" class="text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Navigation -->
+    <nav id="mobile-nav"
+      class="absolute bg-black w-full top-16 left-0 hidden gap-8 items-center justify-center py-6 px-6 shadow-lg lg:hidden">
+      <div class="flex items-center gap-5 justify-center">
+        <a href="#home" class="text-white no-underline hover:text-blue-400 transition-all">Home</a>
+        <a href="#about" class="text-white no-underline hover:text-blue-400 transition-all">About</a>
+        <a href="#project" class="text-white no-underline hover:text-blue-400 transition-all">Project</a>
+        <a href="#certificate" class="text-white no-underline hover:text-blue-400 transition-all">Certificate</a>
+      </div>
+    </nav>
+
   </header>
 
   <!-- Section Home -->
@@ -41,86 +58,91 @@
     <div class="absolute inset-0 bg-black opacity-80"></div>
 
     <!-- Konten Utama -->
-    <div class="relative z-10 flex flex-col items-center">
+    <div class="relative z-10 flex flex-col items-center px-4 sm:px-8 md:px-16">
+      <!-- Gambar Profil -->
       <img src="assets/imageMe.jpeg" alt="User Image"
-        class="w-72 my-16 rounded-full transition-transform transform hover:scale-105 duration-300 cursor-pointer shadow-[0_0_15px_5px_#ffffff] hover:ring-0 hover:ring-primary hover:ring-opacity-50">
+        class="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 my-8 rounded-full transition-transform transform hover:scale-105 duration-300 cursor-pointer shadow-[0_0_15px_5px_#ffffff] hover:ring-0 hover:ring-primary hover:ring-opacity-50">
+      <!-- Teks Utama -->
       <h1
-        class="text-white text-5xl font-normal mt-4 transition-all ease-in-out duration-500 opacity-90 hover:opacity-100">
-        Hi! My name <span class="font-bold text-primary text-blue-400">Andika Arifin</span>
+        class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mt-4 transition-all ease-in-out duration-500 opacity-90 hover:opacity-100">
+        Hi! My name <span class="font-bold text-blue-400">Andika Arifin</span>
       </h1>
-      <p class="text-white text-3xl font-normal mt-4 opacity-80 hover:opacity-100 transition-opacity duration-300">
+      <p
+        class="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal mt-4 opacity-80 hover:opacity-100 transition-opacity duration-300">
         I'm Junior <span class="font-bold text-orange-500">Website Developer</span>
       </p>
 
       <!-- Ikon Sosial Media -->
-      <div class="flex gap-8 mt-6">
+      <div class="flex gap-4 sm:gap-6 md:gap-8 lg:gap-10 mt-6">
         <a href="https://github.com/yourusername" target="_blank"
-          class="text-white text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+          class="text-white text-2xl sm:text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
           <i class="fab fa-github hover:text-purple-400"></i>
         </a>
         <a href="https://www.instagram.com/yourusername" target="_blank"
-          class="text-white text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+          class="text-white text-2xl sm:text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
           <i class="fab fa-instagram hover:text-pink-400"></i>
         </a>
         <a href="https://www.youtube.com/c/yourchannel" target="_blank"
-          class="text-white text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+          class="text-white text-2xl sm:text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
           <i class="fab fa-youtube hover:text-red-400"></i>
         </a>
         <a href="https://www.linkedin.com/in/yourusername" target="_blank"
-          class="text-white text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+          class="text-white text-2xl sm:text-3xl hover:text-primary transition-transform transform hover:scale-125 duration-300 cursor-pointer">
           <i class="fab fa-linkedin hover:text-blue-400"></i>
         </a>
       </div>
     </div>
   </section>
 
-
-
   <!-- Section About -->
-  <section id="about" class="h-[70vh] bg-[#141414] flex justify-center items-center">
-    <div class="flex items-center text-white">
+  <section id="about"
+    class="min-h-[70vh] bg-[#141414] flex flex-col lg:flex-row justify-center items-center px-6 lg:px-12 py-8">
+    <div class="flex flex-col lg:flex-row items-center lg:items-start text-white gap-8 lg:gap-16">
       <!-- Bagian Gambar -->
-      <div class="pr-8">
-        <img src="assets/imageMe.jpeg" alt="Profile Picture" class="w-72 pt-8 pr-8 rounded-full">
+      <div class="flex-shrink-0">
+        <img src="assets/imageMe.jpeg" alt="Profile Picture" class="w-40 md:w-56 lg:w-72 rounded-full shadow-lg">
       </div>
 
       <!-- Bagian Teks -->
-      <div class="max-w-[55%]">
+      <div class="lg:max-w-[55%] text-center lg:text-left">
         <!-- Judul -->
-        <div class="mb-4">
-          <h1 class="text-4xl font-bold text-primary"><span class="text-blue-400">About</span> Me</h1>
+        <div class="mb-6">
+          <h1 class="text-3xl md:text-4xl font-bold text-primary">
+            <span class="text-blue-400">About</span> Me
+          </h1>
         </div>
 
         <!-- Deskripsi -->
         <div class="mb-6">
-          <p class="max-w-xl py-2 tracking-wide">
-            Hi, I'm Andika Arifin. Usually called Anfin. As a person student
-            from Telkom Sidoarjo Vocational School, I am proud to identify
-            myself as a junior web developer who is full of enthusiasm.
-            Embark on a journey in the world of technology and informatics.
+          <p class="max-w-2xl mx-auto lg:mx-0 py-2 tracking-wide text-sm md:text-base">
+            Hi, I'm Andika Arifin. Usually called Anfin. As a student from Telkom Sidoarjo Vocational School, I am proud
+            to identify
+            myself as a junior web developer who is full of enthusiasm. Embark on a journey in the world of technology
+            and
+            informatics.
           </p>
         </div>
 
         <!-- Identitas dan Skill -->
-        <div class="flex gap-12 py-4">
+        <div class="flex flex-col lg:flex-row gap-12 py-4">
           <!-- My Identity -->
           <div>
-            <p class="text-primary font-bold italic mb-2">My Identity</p>
+            <p class="text-primary font-bold italic mb-4">My Identity</p>
             <ul>
-              <li class="flex items-center py-1">
-                <span class="text-primary mr-2 text-blue-400"><i class="fa-solid fa-chevron-right"></i></span>
+              <li class="flex items-center py-1 text-sm md:text-base">
+                <span class="text-blue-400 mr-2"><i class="fa-solid fa-chevron-right"></i></span>
                 Name: Andika Arifin
               </li>
-              <li class="flex items-center py-1">
-                <span class="text-primary mr-2 text-blue-400"><i class="fa-solid fa-chevron-right"></i></span>
+              <li class="flex items-center py-1 text-sm md:text-base">
+                <span class="text-blue-400 mr-2"><i class="fa-solid fa-chevron-right"></i></span>
                 Birthday: 16-10-2007
               </li>
-              <li class="flex items-center py-1">
-                <span class="text-primary mr-2 text-blue-400"><i class="fa-solid fa-chevron-right"></i></span>
+              <li class="flex items-center py-1 text-sm md:text-base">
+                <span class="text-blue-400 mr-2"><i class="fa-solid fa-chevron-right"></i></span>
                 Age: 17 y.o
               </li>
-              <li class="flex items-center py-1">
-                <span class="text-primary mr-2 text-blue-400"><i class="fa-solid fa-chevron-right"></i></span>
+              <li class="flex items-center py-1 text-sm md:text-base">
+                <span class="text-blue-400 mr-2"><i class="fa-solid fa-chevron-right"></i></span>
                 Address: East Java, Sidoarjo
               </li>
             </ul>
@@ -128,25 +150,29 @@
 
           <!-- My Skills -->
           <div>
-            <p class="text-primary font-bold italic mb-2">My Skill</p>
-            <ul class="flex gap-4">
-              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer"><img
-                  src="assets/html.png" alt="HTML" class="w-8"></li>
-              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer"><img
-                  src="assets/css.png" alt="CSS" class="w-8"></li>
-              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer"><img
-                  src="assets/canva.png" alt="Canva" class="w-8"></li>
-              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer"><img
-                  src="assets/figma.png" alt="Figma" class="w-8"></li>
+            <p class="text-primary font-bold italic mb-4">My Skill</p>
+            <ul class="flex gap-4 justify-center lg:justify-start">
+              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+                <img src="assets/html.png" alt="HTML" class="w-8">
+              </li>
+              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+                <img src="assets/css.png" alt="CSS" class="w-8">
+              </li>
+              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+                <img src="assets/canva.png" alt="Canva" class="w-8">
+              </li>
+              <li class="transition-transform transform hover:scale-125 duration-300 cursor-pointer">
+                <img src="assets/figma.png" alt="Figma" class="w-8">
+              </li>
             </ul>
           </div>
         </div>
 
         <!-- Tombol Visit CV -->
-        <div class="mt-6">
+        <div class="mt-6 text-center lg:text-left">
           <a href="https://anf1n-cv-2024.vercel.app/" target="_blank">
             <button
-              class="px-5 py-2 text-lg border-2 border-primary text-primary rounded hover:bg-primary transition-all duration-300 hover:scale-105 hover:bg-blue-400">
+              class="px-6 py-3 text-sm md:text-lg border-2 border-primary text-primary rounded hover:bg-primary transition-all duration-300 hover:scale-105 hover:bg-blue-400">
               Visit CV
             </button>
           </a>
@@ -154,130 +180,96 @@
       </div>
     </div>
   </section>
+
+  <div style="background-color: #262626;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#141414" fill-opacity="1"
+        d="M0,128L48,117.3C96,107,192,85,288,96C384,107,480,149,576,181.3C672,213,768,235,864,224C960,213,1056,171,1152,170.7C1248,171,1344,213,1392,234.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+  </div>
+
   <!-- Section Projects -->
-  <section id="project" class="py-32 px-20 bg-neutral-800">
+  <section id="project" class="py-16 px-6 md:px-12 lg:px-20 bg-neutral-800">
     <div class="container mx-auto">
       <!-- Judul Section -->
       <div class="text-center mb-12">
-        <h1 class="text-4xl font-bold text-primary mb-4 text-white">My <span class="text-blue-400">Projects</span></h1>
-        <p class="text-white text-lg max-w-2xl mx-auto">
+        <h1 class="text-xl sm:text-2xl md:text-4xl font-bold text-primary mb-4 text-white">
+          My <span class="text-blue-400">Projects</span>
+        </h1>
+        <p class="text-white text-xs sm:text-base md:text-lg max-w-3xl mx-auto">
           Here are some of the projects I have worked on. These reflect my passion and skills as a junior web developer.
         </p>
       </div>
 
-      <!-- Flex Projects -->
-      <div class="flex flex-wrap justify-center gap-8">
+      <!-- Grid Projects -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card Template -->
         <div
-          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+          class="bg-neutral-900 rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project1.png" alt="Project 1" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-primary mb-2">Project 1</h3>
+            <h3 class="text-white text-lg font-bold text-primary mb-2">Project 1</h3>
             <p class="text-white text-sm mb-4">
               A brief description of the project, its purpose, and technologies used.
             </p>
             <a href="https://anf1n-dasprog-x-s1.vercel.app/" target="_blank"
-              class="text-white text-primary underline hover:text-orange-500">View Details</a>
+              class="text-primary text-white underline hover:text-orange-500">
+              View Details
+            </a>
           </div>
         </div>
+
         <div
-          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+          class="bg-neutral-900 rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project2.png" alt="Project 2" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-primary mb-2">Project 2</h3>
+            <h3 class="text-white text-lg font-bold text-primary mb-2">Project 2</h3>
             <p class="text-white text-sm mb-4">
               A brief description of the project, its purpose, and technologies used.
             </p>
             <a href="https://anf1n-website-kelas.vercel.app/" target="_blank"
-              class="text-white text-primary underline hover:text-orange-500">View Details</a>
+              class="text-primary text-white underline hover:text-orange-500">
+              View Details
+            </a>
           </div>
         </div>
+
         <div
-          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+          class="bg-neutral-900 rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/project3.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-primary mb-2">Project 3</h3>
+            <h3 class="text-white text-lg font-bold text-primary mb-2">Project 3</h3>
             <p class="text-white text-sm mb-4">
               A brief description of the project, its purpose, and technologies used.
             </p>
             <a href="https://anf1n-cv-2024.vercel.app/" target="_blank"
-              class="text-white text-primary underline hover:text-orange-500">View Details</a>
+              class="text-primary text-white underline hover:text-orange-500">
+              View Details
+            </a>
           </div>
         </div>
-        <div
-          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="assets/project4.png" alt="Project 3" class="w-full h-40 object-cover">
-          <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-primary mb-2">Project 4</h3>
-            <p class="text-white text-sm mb-4">
-              A brief description of the project, its purpose, and technologies used.
-            </p>
-            <a href="https://anf1n-dtp-school.vercel.app/" target="_blank"
-              class="text-white text-primary underline hover:text-orange-500">View Details</a>
-          </div>
-        </div>
-        <div
-          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="assets/project5.png" alt="Project 3" class="w-full h-40 object-cover">
-          <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-primary mb-2">Project 5</h3>
-            <p class="text-white text-sm mb-4">
-              A brief description of the project, its purpose, and technologies used.
-            </p>
-            <a href="https://anf1n-revou-hospital.vercel.app/" target="_blank"
-              class="text-white text-primary underline hover:text-orange-500">View Details</a>
-          </div>
-        </div>
-        <div
-          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="assets/project6.png" alt="Project 3" class="w-full h-40 object-cover">
-          <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-primary mb-2">Project 6</h3>
-            <p class="text-white text-sm mb-4">
-              A brief description of the project, its purpose, and technologies used.
-            </p>
-            <a href="https://anf1n-project-ipas.vercel.app/" target="_blank"
-              class="text-white text-primary underline hover:text-orange-500">View Details</a>
-          </div>
-        </div>
-        <div
-          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="assets/project7.png" alt="Project 3" class="w-full h-40 object-cover">
-          <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-primary mb-2">Project 7</h3>
-            <p class="text-white text-sm mb-4">
-              A brief description of the project, its purpose, and technologies used.
-            </p>
-            <a href="https://w3b-t3c-h1411-anf1n.vercel.app/" target="_blank"
-              class="text-white text-primary underline hover:text-orange-500">View Details</a>
-          </div>
-        </div>
-        <div
-          class=" bg-neutral-900 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="assets/project8.png" alt="Project 3" class="w-full h-40 object-cover">
-          <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-primary mb-2">Project 8</h3>
-            <p class="text-white text-sm mb-4">
-              A brief description of the project, its purpose, and technologies used.
-            </p>
-            <a href="https://kang-vanjalu.vercel.app/" target="_blank"
-              class="text-white text-primary underline hover:text-orange-500">View Details</a>
-          </div>
-        </div>
+
+        <!-- Card End -->
       </div>
     </div>
   </section>
-  <section id="certificate" class="py-16 px-20 bg-neutral-900">
+
+  <!-- Section Certificate -->
+  <section id="certificate" class="py-16 px-4 bg-neutral-900">
     <div class="container mx-auto">
       <div class="text-center mb-12">
-        <h1 class="text-4xl font-bold text-primary mb-4 text-white">My <span class="text-blue-400">Certificate</span>
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4 text-white">My <span
+            class="text-blue-400">Certificate</span>
         </h1>
-        <p class="text-white text-lg max-w-2xl mx-auto">
+        <p class="text-white text-xs sm:text-base max-w-2xl mx-auto">
           Here are some of the projects I have worked on. These reflect my passion and skills as a junior web developer.
         </p>
       </div>
       <div class="flex flex-wrap justify-center gap-8">
+        <!-- Card 1 -->
         <div
-          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+          class="bg-neutral-800 rounded-lg overflow-hidden shadow-md w-full sm:w-72 md:w-80 lg:w-72 xl:w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/certificate/certificate1.png" alt="Project 1" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Revou</h3>
@@ -286,8 +278,9 @@
             </p>
           </div>
         </div>
+        <!-- Card 2 -->
         <div
-          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+          class="bg-neutral-800 rounded-lg overflow-hidden shadow-md w-full sm:w-72 md:w-80 lg:w-72 xl:w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/certificate/certificate2.png" alt="Project 2" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Dibimbing.id</h3>
@@ -296,8 +289,9 @@
             </p>
           </div>
         </div>
+        <!-- Card 3 -->
         <div
-          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+          class="bg-neutral-800 rounded-lg overflow-hidden shadow-md w-full sm:w-72 md:w-80 lg:w-72 xl:w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
           <img src="assets/certificate/certificate3.png" alt="Project 3" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Dibimbing.id</h3>
@@ -306,19 +300,21 @@
             </p>
           </div>
         </div>
+        <!-- Card 4 -->
         <div
-          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="assets/certificate/certificate4.png" alt="Project 3" class="w-full h-40 object-cover">
+          class="bg-neutral-800 rounded-lg overflow-hidden shadow-md w-full sm:w-72 md:w-80 lg:w-72 xl:w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+          <img src="assets/certificate/certificate4.png" alt="Project 4" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Pijar </h3>
+            <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Pijar</h3>
             <p class="text-white text-sm mb-4">
               A brief description of the project, its purpose, and technologies used.
             </p>
           </div>
         </div>
+        <!-- Card 5 -->
         <div
-          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="assets/certificate/certificate5.png" alt="Project 3" class="w-full h-40 object-cover">
+          class="bg-neutral-800 rounded-lg overflow-hidden shadow-md w-full sm:w-72 md:w-80 lg:w-72 xl:w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+          <img src="assets/certificate/certificate5.png" alt="Project 5" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from Telkom Indonesia</h3>
             <p class="text-white text-sm mb-4">
@@ -326,9 +322,10 @@
             </p>
           </div>
         </div>
+        <!-- Card 6 -->
         <div
-          class=" bg-neutral-800 rounded-lg overflow-hidden shadow-md w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="assets/certificate/certificate6.png" alt="Project 3" class="w-full h-40 object-cover">
+          class="bg-neutral-800 rounded-lg overflow-hidden shadow-md w-full sm:w-72 md:w-80 lg:w-72 xl:w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+          <img src="assets/certificate/certificate6.png" alt="Project 6" class="w-full h-40 object-cover">
           <div class="p-4">
             <h3 class="text-white text-xl font-bold text-primary mb-2">Certificate from ID-Networkers</h3>
             <p class="text-white text-sm mb-4">
@@ -340,7 +337,7 @@
     </div>
   </section>
 
-
 </body>
+<script src="script.js"></script>
 
 </html>
