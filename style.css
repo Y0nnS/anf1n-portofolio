@@ -716,6 +716,10 @@ video {
   margin-bottom: 0px;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1065,6 +1069,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1351,6 +1365,10 @@ video {
 
   .sm\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .sm\:mt-4 {
+    margin-top: 1rem;
   }
 
   .sm\:w-56 {
