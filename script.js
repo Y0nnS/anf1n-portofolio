@@ -38,10 +38,10 @@ fetch('database/project.json')
         <div class="bg-neutral-900 rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer flex flex-col h-full">
           <img src="${project.image}" alt="${project.title}" class="w-full h-40 object-cover">
           <div class="p-4 flex flex-col flex-grow">
-            <h3 class="text-white text-lg font-bold text-primary mb-2">${project.title}</h3>
-            <p class="text-white text-sm mb-9">${project.description}</p>
+            <h3 class="text-white text-[12px] sm:text-lg font-semibold text-primary mb-2">${project.title}</h3>
+            <p class="text-white text-[10px] sm:text-sm mb-9">${project.description}</p>
             <div class="mt-auto">
-              <a href="${project.link}" target="_blank" class="text-primary text-white bg-blue-500 hover:bg-blue-400 transition-all duration-300 border-white border-1 border-primary rounded-md p-2">
+              <a href="${project.link}" target="_blank" class="text-[12px] sm:text-base text-white bg-blue-500 hover:bg-blue-400 transition-all duration-300 border-white border-1 border-primary rounded-md p-2">
                 View Details <i class="fa-solid fa-angles-right"></i>
               </a>
             </div>
@@ -60,8 +60,8 @@ fetch('database/certificates.json')
         <div onclick="openModal('${cert.image}')" class="bg-neutral-800 rounded-lg overflow-hidden shadow-md w-full sm:w-72 md:w-80 lg:w-72 xl:w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer card">
           <img src="${cert.image}" alt="${cert.title}" class="w-full h-40 object-cover">
           <div class="p-4">
-            <h3 class="text-white text-xl font-bold text-blue-400 mb-2">${cert.title}</h3>
-            <p class="text-white text-sm mb-9">${cert.description}</p>
+            <h3 class="text-white text-[12px] sm:text-lg font-bold text-blue-400 mb-2">${cert.title}</h3>
+            <p class="text-white text-[10px] sm:text-sm mb-9">${cert.description}</p>
           </div>
         </div>
       `).join('');
