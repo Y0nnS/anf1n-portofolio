@@ -1,7 +1,3 @@
-AOS.init({
-  duration: 1200,
-});
-
 const hamburger = document.getElementById("hamburger");
 const dropdownMenu = document.getElementById("dropdown-menu");
 

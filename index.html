@@ -8,8 +8,6 @@
   <link rel="icon" href="assets/logo.png">
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Portofolio</title>
 </head>
 <style>
@@ -133,7 +131,7 @@
         </div>
 
         <!-- Identitas dan Skill -->
-        <div class="flex flex-col lg:flex-row gap-12 py-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 py-4">
           <!-- My Identity -->
           <div>
             <p class="text-primary text-[12px] sm:text-lg font-bold italic mb-4">My Identity</p>
@@ -158,23 +156,23 @@
           </div>
 
           <!-- My Skills -->
-          <div>
+          <div class="">
             <p class="text-primary text-[12px] sm:text-lg font-bold italic mb-4">My Skill</p>
-            <ul class="flex gap-4 justify-center lg:justify-start items-center">
-              <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
+            <ul class="sm:flex md:flex grid-cols-4 gap-4 justify-center lg:justify-start items-center flex">
+              <li class=" hover:scale-125 transition-transform duration-300 cursor-pointer">
                 <img src="assets/html.png" alt="HTML" class="w-8">
               </li>
               <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
                 <img src="assets/css.png" alt="CSS" class="w-8">
               </li>
               <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
-                <img src="assets/js.png" alt="CSS" class="w-8">
+                <img src="assets/js.png" alt="JavaScript" class="w-8">
               </li>
               <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
-                <img src="assets/php.png" alt="CSS" class="w-10">
+                <img src="assets/php.png" alt="PHP" class="w-10">
               </li>
               <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
-                <img src="assets/tailwind.png" alt="CSS" class="w-10">
+                <img src="assets/tailwind.png" alt="Tailwind CSS" class="w-10">
               </li>
               <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
                 <img src="assets/canva.png" alt="Canva" class="w-8">
@@ -183,29 +181,30 @@
                 <img src="assets/figma.png" alt="Figma" class="w-8">
               </li>
               <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
-                <img src="assets/office.png" alt="Figma" class="w-20">
+                <img src="assets/office.png" alt="Microsoft Office" class="w-20">
               </li>
             </ul>
           </div>
         </div>
 
         <!-- Soft & Hard Skills -->
-        <div class="flex flex-col sm:flex-row gap-6 sm:justify-start">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 py-6">
           <!-- Soft Skills -->
-          <div class="flex-1">
+          <div>
             <p class="text-primary text-[12px] sm:text-lg font-bold italic mb-4">Soft Skills</p>
-            <ul class="text-white text-[10px] sm:text-base space-y-2 text-left">
+            <ul class="text-white text-[10px] sm:text-base space-y-2">
               <li>✅ Communication</li>
               <li>✅ Teamwork</li>
               <li>✅ Problem-Solving</li>
             </ul>
           </div>
+
           <!-- Hard Skills -->
-          <div class="flex-1">
+          <div>
             <p class="text-primary text-[12px] sm:text-lg font-bold italic mb-4">Hard Skills</p>
-            <ul class="text-white text-[10px] sm:text-base space-y-2 text-left">
+            <ul class="text-white text-[10px] sm:text-base space-y-2">
               <li>🎯 Web Development</li>
-              <li>🎯 UI UX Design</li>
+              <li>🎯 UI/UX Design</li>
               <li>🎯 Cyber Security</li>
             </ul>
           </div>
