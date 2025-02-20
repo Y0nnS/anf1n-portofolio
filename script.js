@@ -39,7 +39,10 @@ fetch('database/project.json')
           <img src="${project.image}" alt="${project.title}" class="w-full h-40 object-cover">
           <div class="p-4 flex flex-col flex-grow">
             <h3 class="text-white text-[12px] sm:text-lg font-semibold text-primary mb-2">${project.title}</h3>
-            <p class="text-white text-[10px] sm:text-sm mb-9">${project.description}</p>
+            <p class="text-white text-[10px] sm:text-sm mb-4">${project.description}</p>
+            <div class="flex gap-2 mb-4">
+              ${project.technologies.map(tech => `<img src="${tech}" alt="Technology" class="h-6">`).join('')}
+            </div>
             <div class="mt-auto">
               <a href="${project.link}" target="_blank" class="text-[12px] sm:text-base text-white bg-blue-500 hover:bg-blue-400 transition-all duration-300 border-white border-1 border-primary rounded-md p-2">
                 View Details <i class="fa-solid fa-angles-right"></i>

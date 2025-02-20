@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/911435ad8d.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="assets/logo.png">
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Portofolio</title>
@@ -20,7 +21,7 @@
   <header class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md text-white shadow-md">
     <div class="container mx-auto flex items-center justify-between px-4 py-4">
       <!-- Logo -->
-      <h1 class="sm:text-[12px] text-xl text-semibold">MyPortofolio</h1>
+      <h1 class="text-[12px] sm:text-2xl font-bold">MyPortofolio</h1>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-6">
@@ -108,7 +109,7 @@
       <!-- Bagian Gambar -->
       <div class="flex-shrink-0">
         <img src="assets/user5.jpg" alt="Profile Picture" class=" w-full md:w-56 lg:w-72 rounded-md shadow-lg">
-        <h1 class="mt-5 text-center text-semibold text-[12px] sm:text-md">Hi, My name Andika Arifin 👋</h1>
+        <h1 class="mt-5 text-center text-semibold text-[12px] sm:text-lg">Hi, My name Andika Arifin 👋</h1>
       </div>
       <div class="lg:max-w-[55%] text-center lg:text-left">
         <div class="mb-2 sm:mb-6">
@@ -121,12 +122,11 @@
         <div class="mb-6 flex justify-center">
           <p class="max-w-4xl lg:mx-0 py-2 tracking-wide text-[10px] md:text-base">
             Hi, I'm Andika Arifin, usually called Anfin. As a student from Telkom Sidoarjo Vocational School, I am proud
-            to identify
-            myself as a junior web developer full of enthusiasm. Embarking on a journey in the world of technology and
-            informatics,
-            I am also part of DTP, a Hacker focused on developing innovative applications. With a deep passion
-            for coding
-            and cybersecurity, I strive to create secure, efficient, and impactful digital solutions.
+            to identify myself as a junior web developer full of enthusiasm. Embarking on a journey in the world of
+            technology and informatics, I am also part of DTP, a Hacker focused on developing innovative applications.
+            With a deep passion for coding and cybersecurity, I strive to create secure, efficient, and impactful
+            digital
+            solutions.
           </p>
         </div>
 
@@ -134,7 +134,7 @@
         <div class="flex flex-col lg:flex-row gap-12 py-4">
           <!-- My Identity -->
           <div>
-            <p class="text-primary text-[12px] sm:text-md font-bold italic mb-4">My Identity</p>
+            <p class="text-primary text-[12px] sm:text-lg font-bold italic mb-4">My Identity</p>
             <ul>
               <li class="flex items-center py-1 text-[10px] sm:text-sm md:text-base">
                 <span class="text-blue-400 mr-2"><i class="fa-solid fa-chevron-right"></i></span>
@@ -157,29 +157,64 @@
 
           <!-- My Skills -->
           <div>
-            <p class="text-primary text-[12px] sm:text-md font-bold italic mb-4">My Skill</p>
-            <ul class="flex gap-4 justify-center lg:justify-start">
-              <li class="transition-transform transform w-[20px] sm:w-auto hover:scale-125 duration-300 cursor-pointer">
+            <p class="text-primary text-[12px] sm:text-lg font-bold italic mb-4">My Skill</p>
+            <ul class="flex gap-4 justify-center lg:justify-start items-center">
+              <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
                 <img src="assets/html.png" alt="HTML" class="w-8">
               </li>
-              <li class="transition-transform transform w-[20px] sm:w-auto hover:scale-125 duration-300 cursor-pointer">
+              <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
                 <img src="assets/css.png" alt="CSS" class="w-8">
               </li>
-              <li class="transition-transform transform w-[20px] sm:w-auto hover:scale-125 duration-300 cursor-pointer">
+              <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
+                <img src="assets/js.png" alt="CSS" class="w-8">
+              </li>
+              <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
+                <img src="assets/php.png" alt="CSS" class="w-10">
+              </li>
+              <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
+                <img src="assets/tailwind.png" alt="CSS" class="w-10">
+              </li>
+              <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
                 <img src="assets/canva.png" alt="Canva" class="w-8">
               </li>
-              <li class="transition-transform transform w-[20px] sm:w-auto hover:scale-125 duration-300 cursor-pointer">
+              <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
                 <img src="assets/figma.png" alt="Figma" class="w-8">
+              </li>
+              <li class="hover:scale-125 transition-transform duration-300 cursor-pointer">
+                <img src="assets/office.png" alt="Figma" class="w-20">
               </li>
             </ul>
           </div>
         </div>
 
+        <!-- Soft & Hard Skills -->
+        <div class="flex flex-col sm:flex-row gap-6 sm:justify-start">
+          <!-- Soft Skills -->
+          <div class="flex-1">
+            <p class="text-primary text-[12px] sm:text-lg font-bold italic mb-4">Soft Skills</p>
+            <ul class="text-white text-[10px] sm:text-base space-y-2">
+              <li>✅ Communication</li>
+              <li>✅ Teamwork</li>
+              <li>✅ Problem-Solving</li>
+            </ul>
+          </div>
+          <!-- Hard Skills -->
+          <div class="flex-1">
+            <p class="text-primary text-[12px] sm:text-lg font-bold italic mb-4">Hard Skills</p>
+            <ul class="text-white text-[10px] sm:text-base space-y-2">
+              <li>🎯 Web Development</li>
+              <li>🎯 UI UX Design</li>
+              <li>🎯 Cyber Security</li>
+            </ul>
+          </div>
+        </div>
+
+
         <!-- Tombol Visit CV -->
         <div class="mt-6 text-center lg:text-left">
           <a href="https://anf1n-cv-2024.vercel.app/" target="_blank">
             <button
-              class="px-3 py-1 sm:px-6 sm:py-3 text-[10px] md:text-lg border-1 border-primary text-primary rounded hover:bg-primary transition-all duration-300 hover:scale-105 bg-blue-500 hover:bg-blue-400">
+              class="px-3 py-1 sm:px-6 sm:py-3 text-[10px] md:text-lg text-primary rounded hover:bg-primary transition-all duration-300 hover:scale-105 bg-blue-500 hover:bg-blue-400">
               Visit my CV <i class="fa-solid fa-angles-right"></i>
             </button>
           </a>
