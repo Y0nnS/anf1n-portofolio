@@ -1,15 +1,19 @@
+AOS.init({
+  duration: 1200,
+});
+
 const hamburger = document.getElementById("hamburger");
 const dropdownMenu = document.getElementById("dropdown-menu");
 
 document.addEventListener("click", (event) => {
-    if (!hamburger.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.add("hidden");
-    }
+  if (!hamburger.contains(event.target) && !dropdownMenu.contains(event.target)) {
+    dropdownMenu.classList.add("hidden");
+  }
 });
 
 hamburger.addEventListener("click", (event) => {
-    event.stopPropagation(); // Mencegah event dari mencapai document listener
-    dropdownMenu.classList.toggle("hidden");
+  event.stopPropagation(); // Mencegah event dari mencapai document listener
+  dropdownMenu.classList.toggle("hidden");
 });
 
 // Event listener untuk card
@@ -18,23 +22,23 @@ const modal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
 
 cards.forEach(card => {
-    card.addEventListener("click", () => {
-        const imageSrc = card.querySelector("img").src;
-        modalImage.src = imageSrc;
-        modal.classList.remove("hidden");
-    });
+  card.addEventListener("click", () => {
+    const imageSrc = card.querySelector("img").src;
+    modalImage.src = imageSrc;
+    modal.classList.remove("hidden");
+  });
 });
 
 function closeModal() {
-    modal.classList.add("hidden");
+  modal.classList.add("hidden");
 }
 
 // Database Project
 fetch('database/project.json')
-    .then(response => response.json())
-    .then(data => {
-        const container = document.getElementById('projects-container');
-        container.innerHTML = data.projects.map(project => `
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('projects-container');
+    container.innerHTML = data.projects.map(project => `
         <div class="bg-neutral-900 rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer flex flex-col h-full">
           <img src="${project.image}" alt="${project.title}" class="w-full h-40 object-cover">
           <div class="p-4 flex flex-col flex-grow">
@@ -51,15 +55,15 @@ fetch('database/project.json')
           </div>
         </div>
       `).join('');
-    })
-    .catch(error => console.error('Error loading projects:', error));
+  })
+  .catch(error => console.error('Error loading projects:', error));
 
 // Fetch Certificate Data
 fetch('database/certificates.json')
-    .then(response => response.json())
-    .then(data => {
-        const container = document.getElementById('certificate-container');
-        container.innerHTML = data.certificates.map(cert => `
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('certificate-container');
+    container.innerHTML = data.certificates.map(cert => `
         <div onclick="openModal('${cert.image}')" class="bg-neutral-800 rounded-lg overflow-hidden shadow-md w-full sm:w-72 md:w-80 lg:w-72 xl:w-72 transition-transform transform hover:scale-105 duration-300 cursor-pointer card">
           <img src="${cert.image}" alt="${cert.title}" class="w-full h-40 object-cover">
           <div class="p-4">
@@ -68,15 +72,15 @@ fetch('database/certificates.json')
           </div>
         </div>
       `).join('');
-    })
-    .catch(error => console.error('Error loading certificates:', error));
+  })
+  .catch(error => console.error('Error loading certificates:', error));
 
 // Modal Functions
 function openModal(imageSrc) {
-    document.getElementById("modalImage").src = imageSrc;
-    document.getElementById("imageModal").classList.remove("hidden");
+  document.getElementById("modalImage").src = imageSrc;
+  document.getElementById("imageModal").classList.remove("hidden");
 }
 
 function closeModal() {
-    document.getElementById("imageModal").classList.add("hidden");
+  document.getElementById("imageModal").classList.add("hidden");
 }
