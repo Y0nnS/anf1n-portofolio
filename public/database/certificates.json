@@ -1,0 +1,34 @@
+{
+  "certificates": [
+    {
+      "title": "Certificate from Revou",
+      "image": "assets/certificate/certificate1.png",
+      "description": "A brief description of the project, its purpose, and technologies used."
+    },
+    {
+      "title": "Certificate from Dibimbing.id",
+      "image": "assets/certificate/certificate2.png",
+      "description": "A brief description of the project, its purpose, and technologies used."
+    },
+    {
+      "title": "Certificate from Dibimbing.id",
+      "image": "assets/certificate/certificate3.png",
+      "description": "A brief description of the project, its purpose, and technologies used."
+    },
+    {
+      "title": "Certificate from Pijar",
+      "image": "assets/certificate/certificate4.png",
+      "description": "A brief description of the project, its purpose, and technologies used."
+    },
+    {
+      "title": "Certificate from Telkom Indonesia",
+      "image": "assets/certificate/certificate5.png",
+      "description": "A brief description of the project, its purpose, and technologies used."
+    },
+    {
+      "title": "Certificate from ID-Networkers",
+      "image": "assets/certificate/certificate6.png",
+      "description": "A brief description of the project, its purpose, and technologies used."
+    }
+  ]
+}

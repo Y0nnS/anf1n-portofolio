@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "title": "Project 1",
+      "description": "Website for the final semester assignment for class 10 Basics of Programming",
+      "image": "assets/project1.png",
+      "link": "https://anf1n-dasprog-x-s1.vercel.app/",
+      "technologies": ["assets/html.png", "assets/css.png"]
+    },
+    {
+      "title": "Project 2",
+      "description": "The first project for the class X TJAT 2 website. This is an Indonesian language assignment",
+      "image": "assets/project2.png",
+      "link": "https://anf1n-website-kelas.vercel.app/",
+      "technologies": ["assets/html.png", "assets/css.png"]
+    },
+    {
+      "title": "Project 3",
+      "description": "This is a CV that I made for future purposes",
+      "image": "assets/project3.png",
+      "link": "https://anf1n-cv-2024.vercel.app/",
+      "technologies": ["assets/html.png", "assets/tailwind.png"]
+    },
+    {
+      "title": "Project 4",
+      "description": "This is a project for the Digital Talent Hacker Program entrance test",
+      "image": "assets/project4.png",
+      "link": "https://anf1n-dtp-school.vercel.app/",
+      "technologies": ["assets/html.png", "assets/css.png"]
+    },
+    {
+      "title": "Project 5",
+      "description": "This is a project from web development training revou",
+      "image": "assets/project5.png",
+      "link": "https://anf1n-revou-hospital.vercel.app/",
+      "technologies": ["assets/html.png", "assets/css.png"]
+    },
+    {
+      "title": "Project 6",
+      "description": "This is a project to accommodate science course assignments",
+      "image": "assets/project6.png",
+      "link": "https://anf1n-project-ipas.vercel.app/",
+      "technologies": ["assets/html.png", "assets/css.png"]
+    },
+    {
+      "title": "Project 7",
+      "description": "This is a project for the anniversary competition at SMK Telkom Sidoarjo",
+      "image": "assets/project7.png",
+      "link": "https://w3b-t3c-h1411-anf1n.vercel.app/",
+      "technologies": ["assets/html.png", "assets/css.png"]
+    },
+    {
+      "title": "Project 8",
+      "description": "This is a project to create a product website",
+      "image": "assets/project8.png",
+      "link": "https://kang-vanjalu.vercel.app/",
+      "technologies": ["assets/html.png", "assets/tailwind.png"]
+    },
+    {
+      "title": "Project 9",
+      "description": "This is a project to create my Discord Community 1k Members",
+      "image": "assets/project9.png",
+      "link": "https://k1ev.my.id/",
+      "technologies": ["assets/html.png","assets/js.png", "assets/tailwind.png"]
+    }
+  ]
+}
