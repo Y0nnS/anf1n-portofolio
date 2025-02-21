@@ -35,9 +35,10 @@ fetch('database/project.json')
   .then(data => {
     const container = document.getElementById('projects-container');
     container.innerHTML = data.projects.map(project => `
-        <div class="bg-neutral-900 rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer flex flex-col h-full">
+        <div class="bg-neutral-900 rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer flex flex-col h-full justify-center">
+        <div>
           <img src="${project.image}" alt="${project.title}" class="w-full h-40 object-cover">
-          <div class="p-4 flex flex-col flex-grow">
+          <div class="p-4 flex flex-col flex-grow justify-center">
             <h3 class="text-white text-[12px] sm:text-lg font-semibold text-primary mb-2">${project.title}</h3>
             <p class="text-white text-[10px] sm:text-sm mb-4">${project.description}</p>
             <div class="flex gap-2 mb-4">
@@ -48,6 +49,7 @@ fetch('database/project.json')
                 View Details <i class="fa-solid fa-angles-right"></i>
               </a>
             </div>
+          </div>
           </div>
         </div>
       `).join('');

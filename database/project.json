@@ -55,13 +55,6 @@
       "image": "assets/project8.png",
       "link": "https://kang-vanjalu.vercel.app/",
       "technologies": ["assets/html.png", "assets/tailwind.png"]
-    },
-    {
-      "title": "Project 9",
-      "description": "This is a project to create my Discord Community 1k Members",
-      "image": "assets/project9.png",
-      "link": "https://k1ev.my.id/",
-      "technologies": ["assets/html.png","assets/js.png", "assets/tailwind.png"]
     }
   ]
 }
