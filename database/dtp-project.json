@@ -1,0 +1,9 @@
+{
+  "dtpproject": [
+    {
+      "title": "First project DTP",
+      "image": "assets/projectDTP.png",
+      "description": "A brief description of the project, its purpose, and technologies used."
+    }
+  ]
+}

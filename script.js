@@ -71,6 +71,36 @@ fetch('database/certificates.json')
   })
   .catch(error => console.error('Error loading certificates:', error));
 
+// Fetch DTP Project
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('database/dtp-project.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('dtp-container');
+
+      container.innerHTML = data.dtpproject.map(dtp => `
+        <div 
+          class="bg-neutral-800 rounded-lg overflow-hidden shadow-md w-full sm:w-72 md:w-[20vw]
+                 transition-transform transform hover:scale-105 duration-300 cursor-pointer card"
+          onclick="openModal('${dtp.image}')">
+          <img 
+            src="${dtp.image}" 
+            alt="${dtp.title}" 
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-white text-[12px] sm:text-lg font-bold text-blue-400 mb-2">
+              ${dtp.title}
+            </h3>
+            <p class="text-white text-[10px] sm:text-sm mb-9">
+              ${dtp.description}
+            </p>
+          </div>
+        </div>
+      `).join('');
+    })
+    .catch(error => console.error('Error loading DTP projects:', error));
+});
 // Modal Functions
 function openModal(imageSrc) {
   document.getElementById("modalImage").src = imageSrc;
